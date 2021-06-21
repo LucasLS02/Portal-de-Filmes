@@ -1,0 +1,112 @@
+
+body{background-image: url(imagem/fundo_site.jpg);}
+
+/* Menu - Início */
+
+.menu1{ padding: 25px; background-color: beige;}
+.header{background-color: beige; margin-top: 20px; }
+.logo img{ max-width: 100px;}
+
+/* Menu - Fim */
+
+/* Lançamentos - Início */
+
+.lancamentos{ background-color: beige;margin-top: 20px; margin-bottom: 20px; padding:20px;}
+.lancamentos h1{ text-align: center; padding: 10px;}
+.carousel-control-next-icon{background-color: black;}
+.carousel-control-prev-icon{background-color: black;}
+.texto_lancamentos p{ text-align: justify;}
+#ftc{
+     width: 350px;
+}
+
+/* Lançamentos - Início */
+
+/* Em Destaque - Início */
+
+.destaque{ background-color: beige;margin-top: 20px; margin-bottom: 20px; padding:20px;}
+.destaque img{max-width: 100%;}
+.destaque h1{ padding-bottom: 20px; padding-left:60%;}
+.dropdown{padding-top: 10px; padding-left: 150px;}
+.carregar_mais{ margin-top: 20px; margin-left: 80.8%;
+     background-color: black; color: white;}
+#cartao{
+     background-color:beige;
+     border: none;
+}
+
+/* Em Destaque - Fim */
+
+/* Avaliações - Início */
+
+.avaliacao{  background-color: beige;margin-top: 20px; margin-bottom: 20px; padding:20px;}
+.avaliacao h1{ text-align: center;padding-bottom: 10px;}
+.avaliacao p{text-align: justify;}
+.nome_usuario{padding: 0px;}
+.avaliacao h5{font-size: 1.2em;}
+
+/* Avaliações - Fim */
+
+/* Entrevista e Making of - Início */
+
+.entrevista { background-color: beige;margin-top: 20px; margin-bottom: 20px; padding:20px;}
+.entrevista p,h5{font-size: 0.7em;}
+.entrevista h5{font-style: oblique;}
+.entrevista h1{text-align: center; padding-bottom: 10px;}
+.entrevista iframe{width: 100%;}
+
+/* Entrevista e Making of - Fim */
+
+/* Novidades/Sobre - Início */
+
+.sobre{ background-color: beige;margin-top: 20px; margin-bottom: 20px; padding:20px;}
+.sobre img{width: 100%; padding: 10px;}
+.sobre h1{text-align: center ;}
+.sobre p{text-align: justify;}
+.texto_novidades{font-size: 1em;}
+.texto_novidades h5{font-size: 1em; font-style: oblique;}
+.info h2{text-align:center;}
+.info h5{font-size: 1.2em;}
+.info h6{font-size: 0.8em;}
+.editorial i {display: inline;}
+.editorial h5{display: inline;}
+.info i{max-width: 100%;}  
+
+/* Novidades/Sobre - Fim */
+
+/* Footer - Início */
+
+.footer{background-color: beige;margin-top: 20px; margin-bottom: 20px; padding:20px;}
+.footer img{max-width: 50%;}
+.footer p{font-size: 1em;margin-top: 30px;}
+
+/* Footer - Fim */
+
+
+/* Media Querie */
+
+@media screen and (max-width:767px){
+     .header img {max-width: 150%; padding-top: 20px;}
+     .video1 iframe {padding-bottom: 15px; max-width: 100%;}
+     .dropdown{display: none;}
+     .destaque img{max-width: 100%; padding: 10px; }
+     .destaque h1{padding: 10px; padding-left: 80px;}
+     .avaliacao i,h5{padding-top: 10px;}
+     .avaliacao h5{font-size: 1.2em;}
+     .entrevista h5{display:none;}
+     .entrevista p{display:none;}
+     .editorial i {display: inline;}
+     .editorial h5{display: inline;}
+     .materia h5 {font-size: 1.3em; padding-bottom: 30px;}
+     .logo3 img{display: none;}
+} 
+
+@media screen and (min-width:768px) and (max-width:992px){
+     .header img {max-width: 100%; padding-top: 5px;}
+     .dropdown{display: none;}
+     .destaque h1{padding: 10px; padding-left: 250px;}
+     .entrevista h5{display:none;}
+     .entrevista p{display:none;}
+     .logo3 img{max-width: 100%; padding-top: 0px;}
+     .sobre img {max-width: 80%; padding-left: 20%;}
+}

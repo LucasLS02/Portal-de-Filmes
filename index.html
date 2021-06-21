@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d2ca26c7f0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="container header">
+        <div class="row">
+            <div class="col-2 col-xs-8 logo">
+            <a href="filmes.html">
+                <img src="imagem/logo_site.jpg" alt="logo do site">
+            </a>
+            </div>
+            <div class="col-10 col-xs-4 menu1">
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse itens" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Lançamentos</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="filmes.html">Populares</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Avaliações</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Entrevistas e Marketing</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Novidades</a>
+                                </li>
+
+                            </ul>
+                                <input type="text" id="pesquisaF" />
+                                <a href="filmes.html">
+                                <button onclick="pesquisa1()">Pesquisar</button>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <nav onload="carregaFilmesLancamentos();" class="container lancamentos">
+        <h1>Lançamentos</h1>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner" id="car">
+                <div id="car0" class="carousel-item active">
+
+                </div>
+                <div id="car1" class="carousel-item">
+
+                </div>
+                <div id="car2" class="carousel-item">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </nav>
+
+    <figure class="container destaque">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                <h1>Populares</h1>
+            </div>
+            <div class=" col-md-0 col-lg-4">
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categoria TODOS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Aventura</a></li>
+                        <li><a class="dropdown-item" href="#">Romance</a></li>
+                        <li><a class="dropdown-item" href="#">Comédia</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="popular"
+        >
+        </div>
+        <a id="carregar_mais" class="btn btn-primary carregar_mais" href="filmes.html" role="button">+ Carregar mais Filmes</a>
+    </figure>
+
+    <section class="container avaliacao">
+        <h1>Últimas Avaliações</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="col-10 nome_usuario">
+                        <h5>Marta Rodrigues</h5>
+                    </div>
+                </div>
+                <p>Acho o filme ótimo, mistura fantasia com ficção.Mas tbm tem um pouco de aventura. Que é o que muitos,
+                    não somente eu, buscam em filmes deste tipo e categoria.
+                    O enredo do filme tbm é bem desenvolvido. Acredito que todos que pensam desta maneira, AMAM o filme
+                    Amamos o 1º e o 2º. Vamos amar o 3º, 4º e o 5º e último filme da série.</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <p>08/10/2020</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="col-10 nome_usuario">
+                        <h5>Vitória de Mendonça</h5>
+                    </div>
+                </div>
+                <p>Eu amei o filme, fiquei triste com o final mas isso nos faz sair um pouco da faixa de conforto e do
+                    clássico clichê. A fotografia, as músicas, as escolhas dos atores...impecável. O que mais gostei foi
+                    da mistura da nossa realidade com o romance hollywoodiano de época! Ao mesmo tempo que fui lançada
+                    ao passado, aos filmes românticos como “bonequinha de luxo”, estava vivendo no século 21. Incrível.
+                    Incrível. Extremamente original. Mil estrelas!</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <p>24/07/2019</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="col-10 nome_usuario">
+                        <h5>Guilherme Santana</h5>
+                    </div>
+                </div>
+                <p>Uma das melhores produções da Pixar. Li alguns comentários negativos sobre o filme onde as pessoas
+                    confundem religião com religiosidade, dizer que é cristão e não concorda com alguns ensinamentos do
+                    filme é dizer que a vida não pode ser aproveitada fazendo o bem sem olhar a quem, muito menos ao que
+                    se acredita.
+                    É uma mensagem de aproveitar cada segundo e uma reflexão dos julgamentos que fazemos sobre os outros
+                    e sobre nós.
+                    Uma obra de arte</p>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <p>20/04/2020</p>
+            </div>
+        </div>
+        <a class="btn btn-primary carregar_mais" href="#" role="button">+ Carregar mais Avaliações</a>
+    </section>
+
+    <section class="container entrevista">
+        <h1>Entrevistas e Making Of</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/Y5x7G7hST70" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h5>Filme</h5>
+                <p>Star Wars: Episódio IX (The Rise of Skywalker)</p>
+                <h5>Diretor</h5>
+                <p>J. J. Abrams</p>
+                <h5>Roteiro</h5>
+                <p>J. J. Abrams e Chris Terrio</p>
+                <h5>estreia</h5>
+                <p>19 de dezembro de 2019</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <iframe class="col-12" src="https://www.youtube-nocookie.com/embed/j25fttKwEYM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h5>Filme</h5>
+                <p>La La Land: Cantando Estações</p>
+                <h5>Diretor</h5>
+                <p> Damien Chazelle</p>
+                <h5>Roteiro</h5>
+                <p>Damien Chazelle</p>
+                <h5>Estreia</h5>
+                <p>13 de janeiro de 2017</p>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <iframe src="https://www.youtube-nocookie.com/embed/mvIv9XEINhM" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <h5>Filme</h5>
+                <p>Harry Potter e as Relíquias da Morte: Parte 2</p>
+                <h5>Diretor</h5>
+                <p>David Yates</p>
+                <h5>Roteiro</h5>
+                <p>Steven Kloves</p>
+                <h5>estreia</h5>
+                <p>15 de julho de 2011</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container sobre">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 materia">
+                <h1>Novidades</h1>
+                <div class="row ">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 novidades_1">
+                        <img src="imagem/noticia_1.jpg" alt="novidades 1">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 texto_novidades">
+                        <h5>'Moonlight' x 'La la land': veja como foi a confusão do anúncio do Oscar de melhor filme
+                        </h5>
+                        <p>Uma grande confusão tomou conta do palco do Oscar 2017 bem no momento de sua principal
+                            categoria. "Moonlight: Sob a luz do luar" foi o ganhador como melhor filme, apesar de
+                            anunciarem primeiramente que "La la land: Cantando estações" era ganhador da premiação.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 novidades_1">
+                        <img src="imagem/noticia_2.jpg" alt="novidades 1">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 texto_novidades">
+                        <h5>Oscar 2021 tem a pior audiência televisiva nos EUA da história da cerimônia</h5>
+                        <p>A audiência do Oscar deste ano despencou em mais da metade, alcançando uma nova média mínima
+                            de 9,85 milhões de telespectadores nos Estados Unidos, informou a rede de televisão ABC.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 novidades_1">
+                        <img src="imagem/noticia_3.jpg" alt="novidades 1">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 texto_novidades">
+                        <h5>Oscar 2021: Zé do Caixão ganha homenagem póstuma em site da premiação</h5>
+                        <p>José Mojica Marins, o Zé do Caixão, foi homenageado em uma galeria póstuma no site do Oscar.
+                            O mestre do terror brasileiro morreu, aos 83 anos, em fevereiro do ano passado.
+                            Jessica Walter, a Lucille de "Arrested Development" ("Caindo na Real", em português),
+                            aparece também no site da Academia. Ambos não foram citados na cerimônia ao vivo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 info">
+                <h1>Sobre</h1>
+                <p>Esse site foi desenvolvido por Lucas Lage e Silva para a disciplina de Trabbalho Interdisciplinar de
+                    Aplicações Web da PUC MINAS Campus Praça da Liberdade.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa repudiandae, tenetur ad assumenda sed
+                    illo culpa repellat ducimus accusamus tempore pariatur quam consequuntur voluptatum optio suscipit
+                    adipisci impedit mollitia magni ratione! Cum earum aspernatur nemo delectus, odio molestiae
+                    exercitationem laboriosam eaque libero quidem adipisci accusamus soluta repellat ab nobis hic?
+                </p>
+                <h2 class="editorial">Editorial</h2>
+                <i class="fas fa-user eu"></i>
+                <h5>Redação:</h5>
+                <h6>Lucas Lage</h6>
+                <i class="fas fa-user eu"></i>
+                <h5>Pesquisa:</h5>
+                <h6>Lucas Lage</h6>
+                <i class="fas fa-user eu"></i>
+                <h5>Gerente Geral:</h5>
+                <h6>Lucas Lage</h6>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container footer">
+        <div class="row">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-md-10">
+                <p>Copyright 2020 - Disciplina de interfaces web - ICEI PUC Minas</p>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2 col-md-2 logo3">
+                <img src="imagem/logo_site.jpg" alt="logo do site">
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

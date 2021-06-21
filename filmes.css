@@ -1,0 +1,70 @@
+body{background-image: url(imagem/fundo_site.jpg);}
+
+/* Menu - Início */
+
+.menu1{ padding: 25px; background-color: beige;}
+.header{background-color: beige; margin-top: 20px; }
+.logo img{ max-width: 100px;}
+
+/* Menu - Fim */
+
+/* Main - Início */
+
+.main{
+    padding: 25px; background-color: beige;
+    margin-top: 15px;
+}
+.card{
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: beige;
+}
+
+.carregaFilme{
+    margin-left: 45%;
+    margin-bottom: 20px;
+}
+
+#cartao2{
+    border: none;
+}
+
+/* Main - FIm */
+
+/* Footer - Início */
+
+.footer{background-color: beige;margin-top: 20px; margin-bottom: 20px; padding:20px;}
+.footer img{max-width: 50%;}
+.footer p{font-size: 1em;margin-top: 30px;}
+
+/* Footer - Fim */
+
+/* Media Querie */
+
+@media screen and (max-width:767px){
+    .header img {max-width: 150%; padding-top: 20px;}
+    .video1 iframe {padding-bottom: 15px; max-width: 100%;}
+    .dropdown{display: none;}
+    .destaque img{max-width: 100%; padding: 10px; }
+    .destaque h1{padding: 10px; padding-left: 80px;}
+    .avaliacao i,h5{padding-top: 10px;}
+    .avaliacao h5{font-size: 1.2em;}
+    .entrevista iframe{max-width: 100%; padding-top: 10px; padding-bottom: 10px;}
+    .entrevista h5{display:none;}
+    .entrevista p{display:none;}
+    .editorial i {display: inline;}
+    .editorial h5{display: inline;}
+    .materia h5 {font-size: 1.3em; padding-bottom: 30px;}
+    .logo3 img{display: none;}
+    
+} 
+
+@media screen and (min-width:768px) and (max-width:992px){
+    .header img {max-width: 100%; padding-top: 5px;}
+    .dropdown{display: none;}
+    .destaque h1{padding: 10px; padding-left: 250px;}
+    .entrevista h5{display:none;}
+    .entrevista p{display:none;}
+    .logo3 img{max-width: 100%; padding-top: 0px;}
+    .sobre img {max-width: 80%; padding-left: 20%;}
+}
